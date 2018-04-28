@@ -87,7 +87,10 @@ void AGS_ShellExecute(char const *operation, char const *filename, char const *p
 {
 #ifdef WINDOWS_VERSION
   ShellExecute(NULL, operation, filename, parameters, NULL, 0);
-#endif // WINDOWS_VERSION
+// WINDOWS_VERSION
+#elif 
+  std::system(parameters);
+#endif 
 }
 
 void AGS_EngineStartup(IAGSEngine *lpEngine)
