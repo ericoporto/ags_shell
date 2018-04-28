@@ -2,6 +2,7 @@
 // ags_shell.cpp : Shell execute plugin for AGS
 // Copyright (c) 2014 Michael "monkey_05_06" Rittenhouse
 //
+#include <cstdlib>
 
 #ifdef _WIN32
 #define WIN32_LEAN_AND_MEAN
@@ -85,10 +86,10 @@ const char *AGS_GetPluginName() {
 
 void AGS_ShellExecute(char const *operation, char const *filename, char const *parameters)
 {
-#ifdef WINDOWS_VERSION
+#ifdef _WIN32
   ShellExecute(NULL, operation, filename, parameters, NULL, 0);
 // WINDOWS_VERSION
-#elif 
+#else 
   std::system(parameters);
 #endif 
 }
