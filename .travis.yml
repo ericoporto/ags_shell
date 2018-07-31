@@ -1,0 +1,13 @@
+language: cpp
+compiler:
+- clang
+- gcc
+deploy:
+  provider: releases
+  api_key:
+    secure: QOUesOgtuUcccr/oi5AB73EJ1e5Wm8PUuEfUeSChNA+dF0uoCjvTgmR+ADk7CMRAdo4SwMHU9vGeVpjoB0JIL5WXyWo8cB2pK6IvuWX6gJMYwqx0k/zztbe1u8HGDIldgzfSDIEazjMKkpCDZgk7Axe7ua5dyra83XWe8/pGNAdy3Oh7cvLTj3b6sxMHU/WqoVkqFMia+8hNgz3L+UWAUV82qt5bYyA2X+m1inqDmTqk5UrjSjA1Ky3yE+us7I+4paG01F78VXwnZE414gXj/L/rgzi4ARNV4u2iqEogV7F5bAN/2qntHcUauJ0Cgfkk7XqY7h1aPUGHTmeImO7IS5B/uCGvUWzaZuD70DaNLDgcoF21b0e/aHoEoNMFfIGM3ks6ev8Tdcoffk1Muv15++BxFaoSwa8JWFRLO3PiWFYFS/WFUoiUcv6/FU5ttFn9+IlxLYWovfWpYQtt7iEuaRNKBQ0ddyzgWQvMTvJ6QOf7s+Py2DC7sAL4crf1i3l6/Pl02k3m0iNMF8MKGNi+cyK4fNoFIqu+Tfou0IT81Uix+PB+Mn6mT06whxf3+2HXapHNt+PQa1vAPhQuSR4GbYAWE7Q4mzi7Ng4mn+jdpMJXPF/sp4Wvz1zW7Ux67CvtjfzryEh2AjsKYHozweF1C7Y1dYbAzeIZP3Bnl2UiQAk=
+  file: libagsshell.so
+  on:
+    repo: ericoporto/agsshell
+    branch: master
+    tags: true
