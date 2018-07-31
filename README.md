@@ -1,5 +1,7 @@
 # agsshell
 
+[![Build Status](https://travis-ci.org/ericoporto/agsshell.svg?branch=master)](https://travis-ci.org/ericoporto/agsshell)
+
 I wanted to open webpages from my AGS game.
 
 Used the code started by [monkey0506](https://bitbucket.org/monkey0506/ags_shell).
