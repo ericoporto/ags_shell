@@ -1,7 +1,8 @@
 language: cpp
 compiler:
-- clang
-- gcc
+  - gcc
+script:
+  - make
 deploy:
   provider: releases
   api_key:
